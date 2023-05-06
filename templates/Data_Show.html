@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Data</title>
+	<style>
+		table, th, td {
+			border: 1px solid;
+		}
+	</style>
+</head>
+<body>
+<center>
+
+	{% if rows %}
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<th>Company</th>
+						<th>Date</th>
+						<th>Open</th>
+						<th>High</th>
+						<th>Low</th>
+						<th>Close</th>
+						<th>Volume</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for row in rows %}
+						<tr>
+							<td>{{ row[0] }}</td>					
+							<td>{{ row[1] }}</td>
+							<td>{{ row[2] }}</td>
+							<td>{{ row[3] }}</td>
+							<td>{{ row[4] }}</td>
+							<td>{{ row[5] }}</td>
+							<td>{{ row[6] }}</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	{% else %}
+		<p>No data found for the specified Input.</p>
+	{% endif %}
+
+</center>
+</body>
+</html>

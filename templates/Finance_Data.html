@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finance Data</title>
+</head>
+<body>
+	<h2>Get all companies stock data for a particular date</h2>
+	<form method="GET" action="/all_stock_data_for_date">
+		<label for="date">Date:</label>
+		<input type="text" name="date" id="date" placeholder="YYYY-MM-DD" required>
+		<button type="submit">Submit</button>
+	</form>
+
+	<br><hr><br>
+
+	<h2>Get all stock data for a particular company for a particular date</h2>
+	<form method="GET" action="/stock_data_for_company_and_date">
+		<label for="company">Company:</label>
+		<input type="text" name="company" id="company" placeholder="Company Name" required>
+		<br><br>
+		<label for="date">Date:</label>
+		<input type="text" name="date" id="date" placeholder="YYYY-MM-DD" required>
+		<br><br>
+		<button type="submit">Submit</button>
+	</form>
+
+	<br><hr><br>
+
+	<h2>Get all stock data for a particular company</h2>
+	<form method="GET" action="/stock_data_for_company">
+		<label for="company">Company:</label>
+		<input type="text" name="company" id="company" placeholder="Company Name" required>
+		<button type="submit">Submit</button>
+	</form>
+
+	<br><hr><br>
+
+	<h2>Update stock data for a company by date</h2>
+	<form method="POST" action="/update_stock_data_for_company_by_date">
+		<label for="company">Company:</label>
+		<input type="text" name="company" id="company" placeholder="Company Name" required>
+		<br><br>
+		<label for="date">Date:</label>
+		<input type="text" name="date" id="date" placeholder="YYYY-MM-DD" required>
+		<br><br>
+		<label for="open">Open:</label>
+		<input type="text" name="open" id="open" required>
+		<br><br>
+		<label for="high">High:</label>
+		<input type="text" name="high" id="high" required>
+		<br><br>
+		<label for="low">Low:</label>
+		<input type="text" name="low" id="low" required>
+		<br><br>
+		<label for="close">Close:</label>
+		<input type="text" name="close" id="close" required>
+		<br><br>
+		<label for="volume">Volume:</label>
+		<input type="text" name="volume" id="volume" required>
+		<br><br>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>

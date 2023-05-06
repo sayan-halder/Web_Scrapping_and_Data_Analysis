@@ -1,0 +1,15 @@
+1. Install modules in the system using below commands:
+   !pip install configparser
+   !pip install yfinance
+   !pip install Flask
+   !pip install db-sqlite3
+
+2. Create a folder templates and keep the below mentioned files in that folder
+   Finance_Data.html
+   Data_Show.html
+
+3. Keep all the python files and txt files and templates folder in the same directory.
+
+3. Now run the Download_Data.py file to download the finance data from five companies metioned in the companies.txt file.
+
+4. Run the main.py file to execute the queries.
